@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.Optional;
 
-@FeignClient(name = "movies-service",url = "http://localhost:8072")
+@FeignClient(name = "movies")
 public interface MoviesClient {
 
     @GetMapping("/api/movies/id/{id}")
